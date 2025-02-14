@@ -1,0 +1,47 @@
+[
+  {
+    "title": "TAWUNIYA INSURANCE, SAUDI ARABIA",
+    "logo": "/images/tawuniya-vector-logo.svg",
+    "description": "Developed multiple insurance products including Home Insurance, Medical Insurance, Health Insurance, Travel Insurance, and Motor Insurance."
+  },
+  {
+    "title": "INVOICEMART (AXIS BANK)",
+    "logo": "/images/invoicemart-logo.svg",
+    "description": "Created a common platform for Buyer and Financier to trade and verify documents of both the vendors."
+  },
+  {
+    "title": "WYVATE",
+    "logo": "/images/wyvate.png",
+    "description": "Built an app for order management, similar to Zomato and Swiggy, which enables customers to place orders and vendors to manage them."
+  },
+  {
+    "title": "YOUSHD",
+    "logo": "/images/youshd.webp",
+    "description": "Created a website that allowed influencers to order products from a Shopify store and share product links on the platform, earning money based on views and clicks."
+  },
+  {
+    "title": "THE SUCCESS FINDER",
+    "logo": "/images/success-finder.jpeg",
+    "description": "Implemented a complex Admin Panel with multiple admin roles and data representation using Next.js."
+  },
+  {
+    "title": "CLASSROOM COACHING DASHBOARD",
+    "logo": "/images/classroom-logo.svg",
+    "description": "Built the application from scratch for Classroom CC where coaches can manage grades and student details."
+  },
+  {
+    "title": "TMNC",
+    "logo": "/images/tnmc.jpeg",
+    "description": "This website manages doctors' registration, certificate generation, and admin approval processes."
+  },
+  {
+    "title": "GoGiv",
+    "logo": "/images/gogiv.jpeg",
+    "description": "A platform designed to facilitate charitable giving by connecting donors with verified nonprofit organizations."
+  },
+  {
+    "title": "TIFIN-IP",
+    "logo": "/images/tifin.png",
+    "description": "Part of TIFIN, leveraging AI-driven solutions to deliver AI-powered investment insights and data-driven solutions for financial advisors and institutions."
+  }
+]

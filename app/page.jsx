@@ -62,7 +62,7 @@ export default function Home() {
           transition={{ duration: 1 }}
         >
           <h1>Welcome to Space</h1>
-          <p>Building modern, intelligent, and scalable front-end solutions.</p>
+          <p>Building modern, intelligent, and scalable solutions.</p>
         </motion.div>
       </section>
 

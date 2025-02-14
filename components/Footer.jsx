@@ -1,6 +1,10 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import emailjs from 'emailjs-com';
+import { toast } from "react-toastify";
+
+
 
 export default function Footer() {
   const [showModal, setShowModal] = useState(false);
@@ -27,12 +31,20 @@ export default function Footer() {
 function Modal({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Process form data (e.g., send to API)
-    alert("Form submitted!");
-    onClose();
+    
+    emailjs.sendForm('service_dzruetc', 'template_ywf3jpw', e.target, 'LURnvfOddIQtwti3v')
+      .then((result) => {
+        console.log(result.text);
+        // alert("Message Sent Successfully!");
+        toast.success("Message Sent Successfully!");
+        onClose();
+      })
+      .catch((error) => {
+        console.log(error.text);
+        alert("An error occurred, please try again.");
+      });
   };
 
-  // Variants for the backdrop and modal
   const backdropVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -67,37 +79,16 @@ function Modal({ onClose }) {
         <form onSubmit={handleSubmit} className="modal-form">
           <div className="form-group">
             <label htmlFor="name">Name*</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
+            <input id="name" type="text" name="name" placeholder="Your Name" required />
           </div>
-
           <div className="form-group">
             <label htmlFor="email">Email*</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
+            <input id="email" type="email" name="email" placeholder="Your Email" required />
           </div>
-
           <div className="form-group">
             <label htmlFor="message">Message*</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Your Message"
-              required
-            />
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required />
           </div>
-
           <button type="submit" className="submit-btn">
             Send
           </button>
